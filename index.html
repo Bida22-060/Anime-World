@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeWorld - Home</title>
+  <link rel="stylesheet" href="Indexstylesheet.css">
+</head>
+<body>
+  <header>
+<header>
+  <div class="container">
+    <h1>AnimeWorld</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trending.html">Trending</a></li>
+        <li><a href="genre.html">Genre</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <form class="search-form" action="search.html" method="GET">
+      <input type="text" name="q" placeholder="Search anime..." required>
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="slideshow-container">
+        <img class="hero-slide" src="Img-Slideshow container/Fairy Tail.jpg" alt="Anime Slide 1">
+        <img class="hero-slide" src="Img-Slideshow container/Dragon Ball.jpg" alt="Anime Slide 2">
+        <img class="hero-slide" src="Img-Slideshow container/Solo Leveling.jpg" alt="Anime Slide 3">
+        <img class="hero-slide" src="Img-Slideshow container/Wind Breaker.png" alt="Anime Slide 4">
+        <img class="hero-slide" src="Img-Slideshow container/Attack on Titan.jpg" alt="Anime Slide 5">
+      </div>
+      <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+
+        function showSlides() {
+          slides.forEach(slide => slide.classList.remove('active'));
+          slideIndex++;
+          if (slideIndex > slides.length) slideIndex = 1;
+          slides[slideIndex - 1].classList.add('active');
+          setTimeout(showSlides, 5000);
+        }
+
+        window.addEventListener('load', showSlides);
+      </script>
+
+      <h2>Stream Your Favorite Anime</h2>
+      <p>Enjoy a wide range of anime, from action-packed adventures to heartfelt romances.</p>
+    </section>
+
+    <section class="featured">
+      <h3>Recommendations</h3>
+      <div class="anime-grid">
+
+
+        <!-- Anime Items -->
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/143f8e54-9d5c-9053-fb4c-8650a19edb5c" target="_blank" class="anime-item">
+          <img src="Img-HOME/Fairy Tail.jpg" alt="Fairy Tail">
+          <h4>Fairy Tail</h4>
+        </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/d58fc9f8-582e-fdf0-3618-112cd54ed5ab" target="_blank" class="anime-item">
+          <img src="Img-HOME/One piece.jpg" alt="One Piece">
+          <h4>One Piece</h4>
+          </a>
+        </div>
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/8d0c8929-47e2-a116-8c83-5b83afec7b1e" target="_blank" class="anime-item">
+          <img src="Img-HOME/Demon Slayer.jpg" alt="Demon Slayer">
+          <h4>Demon Slayer</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/7ff2101d-5ff6-03f0-9584-e15c43fb8d7c" target="_blank" class="anime-item">
+          <img src="Img-HOME/Attack on Titan.jpg" alt="Attack on Titan">
+          <h4>Attack on Titan</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/d73ac2e4-cf2f-b467-ad0e-947e647701e3" target="_blank" class="anime-item">
+          <img src="Img-HOME/Bleach.jpg" alt="Bleach">
+          <h4>Bleach</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/78e38106-d9f3-a8b5-7974-9702f603dc96" target="_blank" class="anime-item">
+          <img src="Img-HOME/Naruto.jpg" alt="Naruto">
+          <h4>Naruto</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/f17542f8-906c-d63f-8f67-1ff083867bc6" target="_blank" class="anime-item">
+          <img src="Img-HOME/Jujutsu Kaisen.jpg" alt="Jujutsu Kaisen">
+          <h4>Jujutsu Kaisen</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/00f27285-dd2b-3dde-9644-a76279fc1282" target="_blank" class="anime-item">
+          <img src="Img-HOME/Fullmetal Alchemist.jpg" alt="Fullmetal Alchemist: Brotherhood">
+          <h4>Fullmetal Alchemist: Brotherhood</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/a50c159e-da7d-aad4-479a-1f9aa2a582b9" target="_blank" class="anime-item">
+          <img src="Img-HOME/Death Note.jpg" alt="Death Note">
+          <h4>Death Note</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/df337ebc-7f73-0f3b-516d-6ebd5808590d" target="_blank" class="anime-item">
+          <img src="Img-HOME/Hunter x Hunter.jpg" alt="Hunter x Hunter">
+          <h4>Hunter x Hunter</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/a5144c3b-804d-8faf-f2d1-dd318376777b" target="_blank" class="anime-item">
+          <img src="Img-HOME/Dragon Ball Super.jpg" alt="Dragon Ball Super">
+          <h4>Dragon Ball Super</h4>
+          </a>
+        </div>
+
+
+        <div class="anime-item">
+          <a href="https://animepahe.ru/anime/1d46b7b2-8b7f-00d2-72c2-dc98ee9bd3e4" target="_blank" class="anime-item">
+          <img src="Img-HOME/One Punch Man.jpg" alt="One Punch Man">
+          <h4>One Punch Man</h4>
+          </a>
+        </div>
+
+
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <div class="container footer-container">
+    <p>&copy; 2025 AnimeWorld. All rights reserved.</p>
+    <nav class="footer-nav">
+      <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
