@@ -141,8 +141,15 @@ main {
 /* ========== Anime Grid ========== */
 .anime-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 equal columns */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .anime-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .anime-item {
